@@ -48,29 +48,29 @@ const Skills = function () {
                         </h3>
                         <div>
                             <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard skill='React' Icon={SiReact} color='pink'/>
-                                <SkillCard skill='Django' Icon={SiDjango} color='pink'/>
-                                <SkillCard skill='Postgres' Icon={SiPostgresql} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience' skill='React' Icon={SiReact} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience'  skill='Django' Icon={SiDjango} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience'  skill='Postgres' Icon={SiPostgresql} color='pink'/>
                             </div>
                             <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard skill='Python' Icon={SiPython} color='pink'/>
-                                <SkillCard skill='Javascript' Icon={SiJavascript} color='pink'/>
-                                <SkillCard skill='HTML' Icon={SiHtml5} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience'  skill='Python' Icon={SiPython} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience'  skill='Javascript' Icon={SiJavascript} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience'  skill='HTML' Icon={SiHtml5} color='pink'/>
                             </div>
                             <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard skill='CSS' Icon={SiCss3} color='pink'/>
-                                <SkillCard skill='Next js' Icon={SiVercel} color='pink'/>
-                                <SkillCard skill='Typescript' Icon={SiTypescript} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience'  skill='CSS' Icon={SiCss3} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience' skill='Next js' Icon={SiVercel} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience' skill='Typescript' Icon={SiTypescript} color='pink'/>
                             </div>
                             <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard skill='Bootstrap' Icon={SiBootstrap} color='pink'/>
-                                <SkillCard skill='Tailwind' Icon={SiTailwindcss} color='pink'/>
-                                <SkillCard skill='Docker' Icon={SiDocker} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience' skill='Bootstrap' Icon={SiBootstrap} color='pink'/>
+                                <SkillCard content='1 year of experience' skill='Tailwind' Icon={SiTailwindcss} color='pink'/>
+                                <SkillCard content='1 year of experience' skill='Docker' Icon={SiDocker} color='pink'/>
                             </div>
                             <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard skill='npm' Icon={SiNpm} color='pink'/>
-                                <SkillCard skill='Yarn' Icon={SiYarn} color='pink'/>
-                                <SkillCard skill='Webpack' Icon={SiWebpack} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience' skill='npm' Icon={SiNpm} color='pink'/>
+                                <SkillCard content='1 year of experience' skill='Yarn' Icon={SiYarn} color='pink'/>
+                                <SkillCard content='2 years and 6 months of experience' skill='Webpack' Icon={SiWebpack} color='pink'/>
                             </div>
                         </div>
 

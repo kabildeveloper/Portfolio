@@ -4,6 +4,7 @@ interface SkillCardProps {
     color: 'sky' | 'green' | 'blue' | 'orange' | 'pink' | 'yellow' | 'violet' | 'indigo',
     skill: string,
     Icon: IconType,
+    content: string
 }
 
 export default function SkillCard(props: SkillCardProps) {
@@ -32,7 +33,7 @@ export default function SkillCard(props: SkillCardProps) {
 
             <div style={{borderLeft: '1px solid #cbcbcb'}} className='h-full ps-6 flex flex-col justify-center'>
                 <h6 className='font-bold'>{props.skill}</h6>
-                <p>2 years and 6 months of experience</p>
+                <p>{props.content}</p>
             </div>
         </div>
 
