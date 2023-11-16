@@ -24,7 +24,7 @@ const Contact = function () {
                 <div className='flex justify-center'>
                     <div className='container flex'>
                         <div className='hidden w-0 md:block md:w-1/2 md:px-16'>
-                            <Img alt='Kabil' width={100} height={100} className='w-full' src='/vector1.svg'/>
+                            <Img alt='Kabil' width={100} height={100} className='w-full' src='/kabil1.svg'/>
                         </div>
                         <div className='w-full md:w-1/2 px-16'>
                             <div className='h-full flex items-center'>
