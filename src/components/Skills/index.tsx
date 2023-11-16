@@ -48,29 +48,29 @@ const Skills = function () {
                         </h3>
                         <div>
                             <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard content='2 years and 6 months of experience' skill='React' Icon={SiReact} color='pink'/>
-                                <SkillCard content='2 years and 6 months of experience'  skill='Django' Icon={SiDjango} color='pink'/>
-                                <SkillCard content='2 years and 6 months of experience'  skill='Postgres' Icon={SiPostgresql} color='pink'/>
+                                <SkillCard content="Built dynamic web interfaces using React's component-based approach" skill='React' Icon={SiReact} color='pink'/>
+                                <SkillCard content='Developed scalable back-end systems for web applications'  skill='Django' Icon={SiDjango} color='pink'/>
+                                <SkillCard content='Managed efficient relational databases for data storage'  skill='Postgres' Icon={SiPostgresql} color='pink'/>
                             </div>
                             <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard content='2 years and 6 months of experience'  skill='Python' Icon={SiPython} color='pink'/>
-                                <SkillCard content='2 years and 6 months of experience'  skill='Javascript' Icon={SiJavascript} color='pink'/>
-                                <SkillCard content='2 years and 6 months of experience'  skill='HTML' Icon={SiHtml5} color='pink'/>
+                                <SkillCard content='Utilized Python for versatile web applications'  skill='Python' Icon={SiPython} color='pink'/>
+                                <SkillCard content='Implemented interactive features for enhanced user experiences'  skill='Javascript' Icon={SiJavascript} color='pink'/>
+                                <SkillCard content='Structured and styled web applications with HTML and CSS'  skill='HTML' Icon={SiHtml5} color='pink'/>
                             </div>
                             <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard content='2 years and 6 months of experience'  skill='CSS' Icon={SiCss3} color='pink'/>
-                                <SkillCard content='2 years and 6 months of experience' skill='Next js' Icon={SiVercel} color='pink'/>
-                                <SkillCard content='2 years and 6 months of experience' skill='Typescript' Icon={SiTypescript} color='pink'/>
+                                <SkillCard content='Structured and styled web applications with HTML and CSS'  skill='CSS' Icon={SiCss3} color='pink'/>
+                                <SkillCard content='Engineered performant web apps with Next.js' skill='Next js' Icon={SiVercel} color='pink'/>
+                                <SkillCard content="Improved code quality using TypeScript's static typing" skill='Typescript' Icon={SiTypescript} color='pink'/>
                             </div>
                             <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard content='2 years and 6 months of experience' skill='Bootstrap' Icon={SiBootstrap} color='pink'/>
-                                <SkillCard content='1 year of experience' skill='Tailwind' Icon={SiTailwindcss} color='pink'/>
-                                <SkillCard content='1 year of experience' skill='Docker' Icon={SiDocker} color='pink'/>
+                                <SkillCard content='Designed responsive interfaces with Bootstrap' skill='Bootstrap' Icon={SiBootstrap} color='pink'/>
+                                <SkillCard content='Created customizable UIs with Tailwind CSS' skill='Tailwind' Icon={SiTailwindcss} color='pink'/>
+                                <SkillCard content='Orchestrated containerized applications for deployment' skill='Docker' Icon={SiDocker} color='pink'/>
                             </div>
                             <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard content='2 years and 6 months of experience' skill='npm' Icon={SiNpm} color='pink'/>
-                                <SkillCard content='1 year of experience' skill='Yarn' Icon={SiYarn} color='pink'/>
-                                <SkillCard content='2 years and 6 months of experience' skill='Webpack' Icon={SiWebpack} color='pink'/>
+                                <SkillCard content='Streamlined project workflows and managed dependencies' skill='npm' Icon={SiNpm} color='pink'/>
+                                <SkillCard content='Enhanced package management and build processes' skill='Yarn' Icon={SiYarn} color='pink'/>
+                                <SkillCard content='Optimized JavaScript assets for faster web loading' skill='Webpack' Icon={SiWebpack} color='pink'/>
                             </div>
                         </div>
 

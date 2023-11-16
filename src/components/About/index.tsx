@@ -33,7 +33,7 @@ const About = function (props: AboutProps) {
                             <div className='h-full flex items-center'>
                                 <div>
                                     <h6 className='font-bold text-4xl mb-8 border-violet-500 border-b-2 w-fit'>ABOUT ME</h6>
-                                    <p className='text-justify' style={{letterSpacing: '1px'}}>Highly skilled and
+                                    <p className='text-left' style={{letterSpacing: '1px'}}>Highly skilled and
                                         results-driven React.js, Next.js, and Django developer with 2.5 years of
                                         experience in creating dynamic
                                         web applications and delivering top-notch solutions. Adept at leveraging

@@ -15,8 +15,9 @@ export default function Projects() {
 
     const dashBoard: ProjectCardProps = {
         title: 'Dashboard POC',
-        content: ' I proudly feature a Proof of Concept (POC) showcasing my proficiency in building dynamic and interactive web applications using React.js and react-charts-js. This dashboard effectively visualizes data through responsive and reusable components, seamlessly integrating a chosen charting library for compelling data representations',
-        link: 'https://dashboard-colorful.netlify.app/',
+        content: ' I proudly feature a Proof of Concept (POC) showcasing my proficiency in building dynamic and interactive web applications using React.js and react-charts-js. This dashboard effectively visualizes data through responsive (All desktop sizes) and reusable components, seamlessly integrating a chosen charting library for compelling data representations',
+        link: 'https://github.com/kabilrajendhiran/dashboard-app',
+        viewLink: 'https://dashboard-colorful.netlify.app/',
         Icon: FaChartSimple
     }
 

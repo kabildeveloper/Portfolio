@@ -6,6 +6,7 @@ export interface ProjectCardProps {
     content: string,
     Icon: IconType
     link: string
+    viewLink?: string
 }
 
 
@@ -13,6 +14,10 @@ export default function ProjectCard(props: ProjectCardProps) {
 
     const onClickLearnMore = () => {
         window.open(props.link, '_blank');
+    }
+
+    const onClickView = () => {
+        window.open(props.viewLink, '_blank');
     }
 
     return (
@@ -28,16 +33,26 @@ export default function ProjectCard(props: ProjectCardProps) {
                     </h5>
                 </div>
                 <div className='px-6'>
-                    <p className='text-justify'>
+                    <p className='text-left'>
                         {props.content}
                     </p>
                 </div>
-                <div className='flex items-center justify-center my-4 font-medium gap-2'>
-                    <p onClick={onClickLearnMore}
-                       style={{borderImage: 'linear-gradient(to right, #4f46e5, #db2777)', borderImageSlice: 1}}
-                       className='w-fit border-b-2 cursor-pointer'>Learn more</p>
-                    <FaArrowRight className='cursor-pointer' onClick={onClickLearnMore}/>
+                <div className='flex justify-center gap-4'>
+                    <div className='flex items-center justify-center my-4 font-medium gap-2'>
+                        <p onClick={onClickLearnMore}
+                           style={{borderImage: 'linear-gradient(to right, #4f46e5, #db2777)', borderImageSlice: 1}}
+                           className='w-fit border-b-2 cursor-pointer'>Learn more</p>
+                        <FaArrowRight className='cursor-pointer' onClick={onClickLearnMore}/>
+                    </div>
+
+                    {props.viewLink && <div className='flex items-center justify-center my-4 font-medium gap-2'>
+                        <p onClick={onClickView}
+                           style={{borderImage: 'linear-gradient(to right, #4f46e5, #db2777)', borderImageSlice: 1}}
+                           className='w-fit border-b-2 cursor-pointer'>View</p>
+                        <FaArrowRight className='cursor-pointer' onClick={onClickView}/>
+                    </div>}
                 </div>
+
             </div>
 
         </div>
