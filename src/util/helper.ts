@@ -1,5 +1,5 @@
 export const onClickDownloadResume = () => {
-    window.open('https://www.dropbox.com/scl/fi/krtx8g0mqftrjbw6d8edy/Kabil_Rajendhiran.pdf?rlkey=k3jbahbg6ppscrq12zfuyfbwt&dl=0', '_blank');
+    window.open('https://1drv.ms/b/s!ArmCam8DlFVugi3gNiXniR6DMM_M?e=KSmoSb', '_blank');
 }
 
 export const onClickLinkedin = () => {
