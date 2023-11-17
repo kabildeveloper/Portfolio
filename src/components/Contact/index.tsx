@@ -24,17 +24,20 @@ const Contact = function () {
                 <div className='flex justify-center'>
                     <div className='container flex'>
                         <div className='hidden w-0 md:block md:w-1/2 md:px-16'>
-                            <Img alt='Kabil' width={100} height={100} className='w-full' src='/kabil1.svg'/>
+                            <Img alt='Kabil' width={100} height={100} className='w-full dark:opacity-80' src='/kabil1.svg'/>
                         </div>
                         <div className='w-full md:w-1/2 px-16'>
                             <div className='h-full flex items-center'>
                                 <div>
-                                    <h6 className='font-bold text-4xl mb-12 border-violet-500 border-b-2 w-fit'>CONTACT
-                                        ME</h6>
-                                    <ul>
+                                    <h6 className='font-bold text-4xl mb-12 border-violet-500 border-b-2 w-fit dark:text-gray-300'>CONTACT
+                                        ME
+                                    </h6>
+                                    <ul className='dark:text-gray-300'>
                                         <li className='flex items-center gap-4 mb-5'>
                                             <div
-                                                className='bg-pink-500 rounded shadow-lg shadow-pink-300 p-2 text-white text-3xl cursor-pointer transition-all duration-200 hover:bg-indigo-500 hover:shadow-indigo-300'>
+                                                className={`bg-pink-500 rounded shadow-lg shadow-pink-300 p-2 text-white 
+                                                text-3xl cursor-pointer transition-all duration-200 hover:bg-indigo-500 
+                                                hover:shadow-indigo-300 dark:bg-opacity-80 dark:shadow-none`}>
                                                 <SlSocialLinkedin onClick={onClickLinkedin}/>
                                             </div>
                                             <p>
@@ -43,7 +46,9 @@ const Contact = function () {
                                         </li>
                                         <li className='flex items-center gap-4 mb-5'>
                                             <div
-                                                className='bg-pink-500 rounded shadow-lg shadow-pink-300 p-2 text-white text-3xl cursor-pointer transition-all duration-200 hover:bg-indigo-500 hover:shadow-indigo-300'>
+                                                className={`bg-pink-500 rounded shadow-lg shadow-pink-300 p-2 text-white 
+                                                text-3xl cursor-pointer transition-all duration-200 hover:bg-indigo-500 
+                                                hover:shadow-indigo-300 dark:bg-opacity-80 dark:shadow-none`}>
                                                 <SlSocialGithub onClick={onClickGithub}/>
                                             </div>
                                             <p>
@@ -52,7 +57,9 @@ const Contact = function () {
                                         </li>
                                         <li className='flex items-center gap-4 mb-5'>
                                             <div
-                                                className='bg-pink-500 rounded shadow-lg shadow-pink-300 p-2 text-white text-3xl cursor-pointer transition-all duration-200 hover:bg-indigo-500 hover:shadow-indigo-300'>
+                                                className={`bg-pink-500 rounded shadow-lg shadow-pink-300 p-2 text-white 
+                                                text-3xl cursor-pointer transition-all duration-200 hover:bg-indigo-500 
+                                                hover:shadow-indigo-300 dark:bg-opacity-80 dark:shadow-none`}>
                                                 <SlSocialGoogle onClick={onClickGMail}/>
                                             </div>
                                             <p>
@@ -61,7 +68,9 @@ const Contact = function () {
                                         </li>
                                         <li className='flex items-center gap-4 mb-5'>
                                             <div
-                                                className='bg-pink-500 rounded shadow-lg shadow-pink-300 p-2 text-white text-3xl cursor-pointer transition-all duration-200 hover:bg-indigo-500 hover:shadow-indigo-300'>
+                                                className={`bg-pink-500 rounded shadow-lg shadow-pink-300 p-2 text-white 
+                                                text-3xl cursor-pointer transition-all duration-200 hover:bg-indigo-500 
+                                                hover:shadow-indigo-300 dark:bg-opacity-80 dark:shadow-none`}>
                                                 <FaWhatsapp onClick={onClickWhatsApp}/>
                                             </div>
                                             <p>

@@ -14,11 +14,11 @@ export default function Home() {
                 <div className='container gap-10 md:gap-0 flex flex-col-reverse md:flex-row w-full'>
                     <div className="md:w-1/2 w-full">
                         <div className='h-full flex flex-col justify-center'>
-                            <p style={{letterSpacing: '2px'}} className='text-md text-gray-500'>HEY THERE !</p>
-                            <h3 className='font-bold text-5xl text-blue-950 mt-4'>
+                            <p style={{letterSpacing: '2px'}} className='text-md dark:text-neutral-400 text-gray-500'>HEY THERE !</p>
+                            <h3 className='font-bold text-5xl text-indigo-950 dark:text-neutral-300 mt-4'>
                                 I AM KABIL RAJENDHIRAN
                             </h3>
-                            <p style={{letterSpacing: '2px'}} className='mt-4 text-black font-light text-2xl'>WEB
+                            <p style={{letterSpacing: '2px'}} className='mt-4 text-black font-light dark:text-neutral-300 text-2xl'>WEB
                                 DEVELOPER</p>
                             <div className='flex gap-2 text-gray-400 items-center text-2xl mt-8 w-full'>
                                 <SlSocialLinkedin onClick={onClickLinkedin}
@@ -43,7 +43,7 @@ export default function Home() {
                     <div className="md:w-1/2 w-full px-8 md:px-0">
                         <div className='flex items-center justify-center'>
                             <ReactParallaxTilt trackOnWindow tiltReverse>
-                                <Img width={500} height={500} className='drop-shadow-2xl' src='/kabil.svg'
+                                <Img width={500} height={500} className='drop-shadow-2xl dark:opacity-80' src='/kabil.svg'
                                      alt='Kabil'/>
                             </ReactParallaxTilt>
                         </div>

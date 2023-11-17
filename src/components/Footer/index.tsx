@@ -7,11 +7,11 @@ import Link from "next/link";
 export default function Footer() {
 
     return (
-        <section className='w-full bg-gray-800 text-gray-100'>
+        <section className='w-full bg-gray-800 dark:bg-gray-900 text-gray-100'>
             <div className='flex justify-center h-full'>
                 <div className='container px-5 md:px-28 mt-16'>
                     <div className='flex gap-5 flex-col md:gap-10 md:flex-row items-center md:items-start'>
-                        <div className='h-fit text-center md:text-left w-full'>
+                        <div className='h-fit text-center md:text-left w-full dark:text-gray-300'>
                             <h5 className='text-3xl text-pink-600 font-bold'>Portfolio</h5>
                             <p className='mt-2'>Kabil Rajendhiran</p>
                             <div
@@ -34,7 +34,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-full text-center md:text-left'>
+                        <div className='w-full text-center md:text-left dark:text-gray-300'>
                             <h6 className='text-lg font-medium text-pink-500 mb-2'>Quick Links</h6>
                             <ul className='hover:[&>*>a]:text-pink-500'>
                                 <li><Link href='/'>Home</Link></li>
@@ -44,7 +44,7 @@ export default function Footer() {
                                 <li><Link href='/contact'>Contact</Link></li>
                             </ul>
                         </div>
-                        <div className='w-full text-center md:text-left'>
+                        <div className='w-full text-center md:text-left dark:text-gray-300'>
                             <h6 className='text-lg font-medium text-pink-500 mb-2'>Credits</h6>
                             <ul className='hover:[&>*>a]:text-pink-500'>
                                 <li><Link target='_blank' href='https://react.dev/'>React</Link></li>
@@ -65,7 +65,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='p-8 text-center bg-gray-800'>
+            <div className='p-8 text-center bg-gray-800 dark:bg-gray-900 dark:text-gray-300'>
                 <p><a href='mailto:kabildeveloper@gmail.com' className='text-pink-500'>Kabil Rajendhiran</a>©2023 All
                     rights reserved</p>
             </div>

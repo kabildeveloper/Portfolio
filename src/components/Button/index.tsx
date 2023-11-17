@@ -29,7 +29,7 @@ export default function Button(props: ButtonProps) {
     }
 
     return (
-        <button onClick={props.onClick} className={`rounded-md text-white font-medium ${classNames} ${styles.button}`}>
+        <button onClick={props.onClick} className={`rounded-md text-white font-medium ${classNames} ${styles.button} dark:opacity-80`}>
             {props.children}
         </button>
     )

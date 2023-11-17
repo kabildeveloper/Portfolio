@@ -4,7 +4,7 @@ export default function Document() {
         <Html lang="en">
             <title> Kabil Rajendhiran </title>
             <Head/>
-            <body>
+            <body className='bg-white dark:bg-gray-800'>
             <Main/>
             <NextScript/>
             </body>
