@@ -40,10 +40,10 @@ const Skills = function () {
             >
                 <div className='flex justify-center h-full items-center'>
                     <div className='px-5 md:px-28 container'>
-                        <h3 className='text-4xl font-bold uppercase border-b-2 border-violet-500 w-fit mb-12 hidden md:block'>
+                        <h3 className='dark:text-gray-300 text-4xl font-bold uppercase border-b-2 border-violet-500 w-fit mb-12 hidden md:block'>
                             Skills where my expertise shines
                         </h3>
-                        <h3 className='text-4xl font-bold uppercase border-b-2 border-violet-500 w-fit mb-12 block md:hidden'>
+                        <h3 className='dark:text-gray-300 text-4xl font-bold uppercase border-b-2 border-violet-500 w-fit mb-12 block md:hidden'>
                             Skills
                         </h3>
                         <div>
