@@ -25,10 +25,6 @@ const About = function (props: AboutProps) {
             <div className='w-full'>
                 <div className='flex justify-center'>
                     <div className='container flex flex-col md:flex-row'>
-                        <div
-                            className={`${props.fromHome ? 'hidden' : ''} mx-10 mb-20 md:mb-0 md:block md:w-1/2 md:px-16 dark:opacity-80`}>
-                            <Img alt='Kabil' width={100} height={100} className='w-full' src='/kabil1.svg'/>
-                        </div>
                         <div className='w-full px-5 md:w-1/2 md:px-16'>
                             <div className='h-full flex items-center'>
                                 <div>
@@ -47,6 +43,11 @@ const About = function (props: AboutProps) {
                                         CV</Button>
                                 </div>
                             </div>
+                        </div>
+
+                        <div
+                            className={`${props.fromHome ? 'hidden' : ''} mx-10 mb-20 md:mb-0 md:block md:w-1/2 md:px-16 dark:opacity-80`}>
+                            <Img alt='Kabil' width={100} height={100} className='w-full' src='/kabil1.svg'/>
                         </div>
                     </div>
                 </div>
