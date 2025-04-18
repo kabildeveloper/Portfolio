@@ -22,10 +22,14 @@ const About = function (props: AboutProps) {
             animate={{ opacity: aboutInView ? 1 : 0, y: aboutInView ? 0 : 100 }}
             transition={{ duration: 1 }}
         >
-            <div className='w-full'>
-                <div className='mx-auto max-w-[800px] shadow-violet-600 shadow border-neutral-500 border p-8 rounded-2xl flex items-center'>
-                    <div>
-                        <h6 className='font-dancing font-bold text-4xl mb-4 dark:text-gray-300 whitespace-nowrap text-center'>About Me</h6>
+            <div className='mx-auto max-w-[800px] relative'>
+                <div></div>
+                <div className='shadow-violet-600 shadow border-neutral-500 border p-8 rounded-2xl flex items-center backdrop-blur-2xl'>
+                    <div className="flex flex-col items-center">
+                        <h6 className='font-dancing font-bold text-4xl mb-4 w-fit whitespace-nowrap text-center text-gray-300'>
+                            <span className='text-gradient'>About </span>
+                            Me
+                        </h6>
                         <p className='text-left dark:text-gray-300 text-neutral-600 font-light' style={{letterSpacing: '1px'}}>Highly skilled and
                             results-driven React.js, Next.js, and Django developer with 2.5 years of
                             experience in creating dynamic

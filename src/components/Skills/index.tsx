@@ -41,7 +41,7 @@ const Skills = function () {
                 <div className='flex justify-center h-full items-center'>
                     <div className='px-5 md:px-28 container'>
                         <h3 className='dark:text-gray-300 text-4xl font-bold w-full text-center mb-12 hidden md:block font-dancing'>
-                            Skills Where My Expertise Shines
+                            <span className='text-gradient'>Skills</span> Where My Expertise Shines
                         </h3>
                         <h3 className='dark:text-gray-300 text-4xl font-bold uppercase border-b-2 border-violet-500 w-fit mb-12 block md:hidden'>
                             Skills

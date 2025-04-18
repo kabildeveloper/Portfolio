@@ -10,7 +10,7 @@ import {onClickDownloadResume, onClickGithub, onClickGMail, onClickLinkedin, onC
 export default function Home() {
     return (
         <section className=''>
-            <div className='w-full flex flex-col items-center justify-center my-20 md:my-40'>
+            <div className='w-full flex flex-col items-center justify-center mt-20 md:mt-40'>
                 <div className='container gap-10 md:gap-0 flex flex-col-reverse md:flex-row w-full'>
                     <div className="md:w-1/2 w-full px-8 md:px-0">
                         <div className='flex items-center justify-center'>
@@ -26,7 +26,7 @@ export default function Home() {
                             <p style={{letterSpacing: '2px'}}
                                className='text-md dark:text-neutral-400 text-gray-500'>Hi there </p>
                             <h3 className='font-normal text-5xl text-indigo-950 dark:text-neutral-300 mt-4 font-dancing'>
-                                {"I'm Kabil Rajendhiran"}
+                                I&apos;m <span className='text-gradient'>Kabil</span>  Rajendhiran
                             </h3>
                             <p style={{letterSpacing: '2px'}}
                                className='mt-4 text-neutral-600 font-light dark:text-neutral-300 text-xl'>

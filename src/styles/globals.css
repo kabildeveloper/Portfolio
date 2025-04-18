@@ -15,3 +15,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.text-gradient {
+    @apply text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text;
+}

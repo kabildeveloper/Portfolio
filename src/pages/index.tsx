@@ -10,6 +10,7 @@ export default function HomePage() {
 
     return (
         <section>
+            <ParticlesBackground/>
             <div className="flex flex-col gap-y-20 md:gap-y-40 mb-20 md:mb-40 relative z-10">
                 <Home />
                  {/*<About fromHome />*/}

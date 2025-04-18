@@ -37,7 +37,7 @@ const ParticlesBackground = () => {
         () => ({
             background: {
                 color: {
-                    value: "#0d47a1",
+                    value: "#0c0f15",
                 },
             },
             fpsLimit: 120,
@@ -49,7 +49,7 @@ const ParticlesBackground = () => {
                     },
                     onHover: {
                         enable: true,
-                        mode: "repulse",
+                        mode: "grab",
                     },
                 },
                 modes: {
@@ -64,10 +64,11 @@ const ParticlesBackground = () => {
             },
             particles: {
                 color: {
-                    value: "#ffffff",
+                    //value: "#4f46e5",
+                    value: "#db2777",
                 },
                 links: {
-                    color: "#ffffff",
+                    color: "#4f46e5",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,
@@ -80,14 +81,14 @@ const ParticlesBackground = () => {
                         default: OutMode.out,
                     },
                     random: false,
-                    speed: 6,
+                    speed: 1,
                     straight: false,
                 },
                 number: {
                     density: {
                         enable: true,
                     },
-                    value: 80,
+                    value: 100,
                 },
                 opacity: {
                     value: 0.5,
@@ -96,10 +97,14 @@ const ParticlesBackground = () => {
                     type: "circle",
                 },
                 size: {
-                    value: { min: 1, max: 5 },
+                    value: { min: 1, max: 3 },
                 },
             },
             detectRetina: true,
+            fullScreen: {
+                enable: false,
+                zIndex: -1,
+            },
         }),
         [],
     );
@@ -107,6 +112,7 @@ const ParticlesBackground = () => {
     if (init) {
         return (
             <Particles
+                className='absolute top-0 left-0 h-screen'
                 id="tsparticles"
                 particlesLoaded={particlesLoaded}
                 options={options}
