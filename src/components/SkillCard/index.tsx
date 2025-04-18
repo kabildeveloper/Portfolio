@@ -1,6 +1,6 @@
 "use client";
 import {IconType} from "react-icons";
-import { useTheme } from "next-themes";
+import {useTheme} from "next-themes";
 import {useEffect, useState} from "react";
 
 interface SkillCardProps {

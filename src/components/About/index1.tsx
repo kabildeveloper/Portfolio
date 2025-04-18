@@ -1,8 +1,5 @@
-import Img from 'next/image';
-import Button from "@/components/Button";
-import {onClickDownloadResume} from "@/util/helper";
 import {useRef} from "react";
-import {useInView, motion} from "framer-motion";
+import {motion, useInView} from "framer-motion";
 
 interface AboutProps {
     fromHome?: boolean

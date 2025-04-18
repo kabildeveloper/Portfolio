@@ -4,7 +4,7 @@ import {onClickDownloadResume, onClickGithub, onClickGMail, onClickLinkedin, onC
 import {SlSocialGithub, SlSocialGoogle, SlSocialLinkedin} from "react-icons/sl";
 import {FaWhatsapp} from "react-icons/fa6";
 import {useRef} from "react";
-import {useInView, motion} from "framer-motion";
+import {motion, useInView} from "framer-motion";
 
 const Contact = function () {
 

@@ -1,8 +1,6 @@
 import ReactParallaxTilt from "react-parallax-tilt";
 import {SlSocialGithub, SlSocialGoogle, SlSocialLinkedin} from 'react-icons/sl';
 import Button from "@/components/Button";
-import StatCard from "@/components/StatCard";
-import {SiDjango, SiPostgresql, SiReact} from 'react-icons/si';
 import {FaWhatsapp} from 'react-icons/fa6';
 import Img from 'next/image'
 import {onClickDownloadResume, onClickGithub, onClickGMail, onClickLinkedin, onClickWhatsApp} from "@/util/helper";

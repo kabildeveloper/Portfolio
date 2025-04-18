@@ -17,7 +17,7 @@ import {
 } from "react-icons/si";
 import SkillCard from "@/components/SkillCard";
 import {useEffect, useRef} from "react";
-import {useInView, motion} from "framer-motion";
+import {motion, useInView} from "framer-motion";
 
 const Skills = function () {
 

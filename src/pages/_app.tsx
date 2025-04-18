@@ -1,8 +1,9 @@
 import '@/styles/globals.css'
 import type {AppProps} from 'next/app'
 import Layout from "@/components/Layout";
-import {Inter, Work_Sans, Poppins, Open_Sans, Dancing_Script} from 'next/font/google';
+import {Dancing_Script, Inter, Open_Sans, Poppins, Work_Sans} from 'next/font/google';
 import {ThemeProvider} from "@/util/theme-provider";
+
 const inter = Inter({subsets: ['latin'], weight: ["100", "300", "400", "500", "700", "900"]});
 const workSans = Work_Sans({subsets: ['latin'], weight: ["100", "300", "400", "500", "700", "900"]});
 const poppins = Poppins({subsets: ['latin'], weight: ["100", "300", "400", "500", "700", "900"]});

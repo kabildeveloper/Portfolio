@@ -1,12 +1,9 @@
-import Button from "@/components/Button";
-import {onClickDownloadResume} from "@/util/helper";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import styles from './Header.module.scss';
 import {SlMenu} from 'react-icons/sl';
 import {useEffect, useRef, useState} from "react";
-import { useTheme } from "next-themes";
-import Switch from "@/components/Switch";
+import {useTheme} from "next-themes";
 import {MENU_ITEMS} from "@/components/Header/Header.constants";
 
 export default function Header() {

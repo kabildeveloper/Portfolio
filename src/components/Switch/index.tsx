@@ -1,6 +1,6 @@
-import React, {useState} from "react";
-import { FaSun, FaMoon } from 'react-icons/fa6';
-import {BsSunFill, BsSunrise} from 'react-icons/bs';
+import React from "react";
+import {FaMoon, FaSun} from 'react-icons/fa6';
+
 interface SwitchProps {
     state: boolean,
     onClickListener: React.MouseEventHandler<HTMLDivElement>

@@ -1,7 +1,7 @@
 import ProjectCard, {ProjectCardProps} from "@/components/ProjectCard";
 import {SiBookstack} from 'react-icons/si';
 import {FaChartSimple, FaGitAlt} from 'react-icons/fa6';
-import {useInView, motion} from "framer-motion";
+import {motion, useInView} from "framer-motion";
 import {useRef} from "react";
 
 export default function Projects() {
