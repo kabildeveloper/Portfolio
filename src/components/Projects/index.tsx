@@ -39,10 +39,10 @@ export default function Projects() {
         <section className='w-full'>
             <div className='flex justify-center h-full'>
                 <div className='px-5 md:px-28 container'>
-                    <h3 className='dark:text-gray-300 text-4xl font-bold uppercase border-b-2 border-violet-500 w-fit mb-16 hidden md:block'>
-                        My Personal Projects
+                    <h3 className='dark:text-gray-300 text-4xl font-bold w-fit mb-16 hidden md:block font-dancing'>
+                        My Personal <span className='text-gradient'>Projects</span>
                     </h3>
-                    <h3 className='dark:text-gray-300 text-4xl font-bold uppercase border-b-2 border-violet-500 w-fit mb-16 block md:hidden'>
+                    <h3 className='dark:text-gray-300 text-4xl font-bold w-fit mb-16 block md:hidden'>
                         Projects
                     </h3>
 

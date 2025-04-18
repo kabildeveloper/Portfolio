@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        dancing: ['var(--font-dancing-script)']
+        dancing: ['var(--font-dancing-script)'],
+        openSans: ['var(--font-open-sans)'],
       }
     }
   },

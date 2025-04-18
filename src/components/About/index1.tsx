@@ -23,8 +23,9 @@ const About = function (props: AboutProps) {
             transition={{ duration: 1 }}
         >
             <div className='mx-auto max-w-[800px] relative'>
-                <div></div>
-                <div className='shadow-violet-600 shadow border-neutral-500 border p-8 rounded-2xl flex items-center backdrop-blur-2xl'>
+                <div className='rounded-[100%] bg-blue-900 opacity-75 w-[100px] h-[100px] absolute bottom-0 right-0'></div>
+                <div className='rounded-[100%] bg-violet-900 opacity-50 w-[100px] h-[100px] absolute top-0 left-0'></div>
+                <div className=' border-neutral-500 border p-8 rounded-2xl flex items-center backdrop-blur-2xl'>
                     <div className="flex flex-col items-center">
                         <h6 className='font-dancing font-bold text-4xl mb-4 w-fit whitespace-nowrap text-center text-gray-300'>
                             <span className='text-gradient'>About </span>
