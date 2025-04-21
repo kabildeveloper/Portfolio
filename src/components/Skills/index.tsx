@@ -47,30 +47,22 @@ const Skills = function () {
                             Skills
                         </h3>
                         <div>
-                            <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard content="Built dynamic web interfaces using React's component-based approach" skill='React' Icon={SiReact} color='pink'/>
-                                <SkillCard content='Developed scalable back-end systems for web applications'  skill='Django' Icon={SiDjango} color='pink'/>
-                                <SkillCard content='Managed efficient relational databases for data storage'  skill='Postgres' Icon={SiPostgresql} color='pink'/>
-                            </div>
-                            <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard content='Utilized Python for versatile web applications'  skill='Python' Icon={SiPython} color='pink'/>
-                                <SkillCard content='Implemented interactive features for enhanced user experiences'  skill='Javascript' Icon={SiJavascript} color='pink'/>
-                                <SkillCard content='Structured and styled web applications with HTML and CSS'  skill='HTML' Icon={SiHtml5} color='pink'/>
-                            </div>
-                            <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard content='Structured and styled web applications with HTML and CSS'  skill='CSS' Icon={SiCss3} color='pink'/>
-                                <SkillCard content='Engineered performant web apps with Next.js' skill='Next js' Icon={SiVercel} color='pink'/>
-                                <SkillCard content="Improved code quality using TypeScript's static typing" skill='Typescript' Icon={SiTypescript} color='pink'/>
-                            </div>
-                            <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard content='Designed responsive interfaces with Bootstrap' skill='Bootstrap' Icon={SiBootstrap} color='pink'/>
-                                <SkillCard content='Created customizable UIs with Tailwind CSS' skill='Tailwind' Icon={SiTailwindcss} color='pink'/>
-                                <SkillCard content='Orchestrated containerized applications for deployment' skill='Docker' Icon={SiDocker} color='pink'/>
-                            </div>
-                            <div className='flex flex-col mb-5 md:mb-10 md:flex-row justify-center gap-5 md:gap-10'>
-                                <SkillCard content='Streamlined project workflows and managed dependencies' skill='npm' Icon={SiNpm} color='pink'/>
-                                <SkillCard content='Enhanced package management and build processes' skill='Yarn' Icon={SiYarn} color='pink'/>
-                                <SkillCard content='Optimized JavaScript assets for faster web loading' skill='Webpack' Icon={SiWebpack} color='pink'/>
+                            <div className='mx-auto flex flex-col mb-5 md:mb-10 md:flex-row justify-center flex-wrap gap-5 max-w-[1200px]'>
+                                <SkillCard content="Built dynamic web interfaces using React's component-based approach" skill="React" Icon={SiReact} color="react" />
+                                <SkillCard content="Developed scalable back-end systems for web applications" skill="Django" Icon={SiDjango} color="django" />
+                                <SkillCard content="Managed efficient relational databases for data storage" skill="Postgres" Icon={SiPostgresql} color="postgres" />
+                                <SkillCard content="Utilized Python for versatile web applications" skill="Python" Icon={SiPython} color="python" />
+                                <SkillCard content="Implemented interactive features for enhanced user experiences" skill="Javascript" Icon={SiJavascript} color="javascript" />
+                                <SkillCard content="Structured and styled web applications with HTML and CSS" skill="HTML" Icon={SiHtml5} color="html" />
+                                <SkillCard content="Structured and styled web applications with HTML and CSS" skill="CSS" Icon={SiCss3} color="css" />
+                                <SkillCard content="Engineered performant web apps with Next.js" skill="Next js" Icon={SiVercel} color="nextjs" />
+                                <SkillCard content="Improved code quality using TypeScript's static typing" skill="Typescript" Icon={SiTypescript} color="typescript" />
+                                <SkillCard content="Designed responsive interfaces with Bootstrap" skill="Bootstrap" Icon={SiBootstrap} color="bootstrap" />
+                                <SkillCard content="Created customizable UIs with Tailwind CSS" skill="Tailwind" Icon={SiTailwindcss} color="tailwind" />
+                                <SkillCard content="Orchestrated containerized applications for deployment" skill="Docker" Icon={SiDocker} color="docker" />
+                                <SkillCard content="Streamlined project workflows and managed dependencies" skill="npm" Icon={SiNpm} color="npm" />
+                                <SkillCard content="Enhanced package management and build processes" skill="Yarn" Icon={SiYarn} color="yarn" />
+                                <SkillCard content="Optimized JavaScript assets for faster web loading" skill="Webpack" Icon={SiWebpack} color="webpack" />
                             </div>
                         </div>
 

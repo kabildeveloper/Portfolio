@@ -3,8 +3,26 @@ import {IconType} from "react-icons";
 import {useTheme} from "next-themes";
 import {useEffect, useState} from "react";
 
+type SkillColor =
+    | 'react'
+    | 'django'
+    | 'postgres'
+    | 'python'
+    | 'javascript'
+    | 'html'
+    | 'css'
+    | 'nextjs'
+    | 'typescript'
+    | 'bootstrap'
+    | 'tailwind'
+    | 'docker'
+    | 'npm'
+    | 'yarn'
+    | 'webpack';
+
+
 interface SkillCardProps {
-    color: 'sky' | 'green' | 'blue' | 'orange' | 'pink' | 'yellow' | 'violet' | 'indigo',
+    color: SkillColor,
     skill: string,
     Icon: IconType,
     content: string
@@ -12,40 +30,27 @@ interface SkillCardProps {
 
 export default function SkillCard(props: SkillCardProps) {
 
-    const {theme, setTheme} = useTheme();
-    const [flag, setFlag] = useState<boolean>(false);
-
-    useEffect(()=>{
-        setFlag(theme!=="dark");
-    },[theme])
-
-    let colorVariants = new Map<string, string>();
-    colorVariants.set('sky', 'shadow-sky-300 border-sky-500 bg-gradient-to-br from-sky-400 to-sky-500');
-    colorVariants.set('green', 'shadow-green-400 border-green-600 bg-gradient-to-br from-green-500 to-green-600');
-    colorVariants.set('blue', 'shadow-blue-400 border-blue-600 bg-gradient-to-br from-blue-500 to-blue-600');
-    colorVariants.set('orange', 'shadow-orange-300 border-orange-500 bg-gradient-to-br from-orange-400 to-orange-500');
-    colorVariants.set('pink', `shadow-pink-300 border-pink-500 ${flag ? 'bg-gradient-to-br from-pink-400 to-pink-500' : ''} dark:bg-pink-500 dark:bg-opacity-75 dark:border-0`);
-    colorVariants.set('indigo', 'shadow-indigo-300 border-indigo-500 bg-gradient-to-br from-indigo-400 to-indigo-500');
-    colorVariants.set('yellow', 'shadow-yellow-200 border-yellow-400 bg-gradient-to-br from-yellow-300 to-yellow-400');
-    colorVariants.set('violet', 'shadow-violet-300 border-violet-500 bg-gradient-to-br from-violet-400 to-violet-500');
-
-
-    let className = '' + colorVariants.get(props.color);
+    const iconColor = new Map<string, string>();
+    iconColor.set('react', 'text-sky-400');         // React
+    iconColor.set('django', 'text-green-700');      // Django
+    iconColor.set('postgres', 'text-blue-300');     // PostgreSQL
+    iconColor.set('python', 'text-blue-500');       // Python (updated to blue)
+    iconColor.set('javascript', 'text-yellow-400'); // JavaScript
+    iconColor.set('html', 'text-orange-600');       // HTML
+    iconColor.set('css', 'text-indigo-500');        // CSS
+    iconColor.set('nextjs', 'text-black');       // Next.js
+    iconColor.set('typescript', 'text-blue-600');   // TypeScript
+    iconColor.set('bootstrap', 'text-purple-600');  // Bootstrap
+    iconColor.set('tailwind', 'text-sky-500');      // Tailwind CSS
+    iconColor.set('docker', 'text-blue-500');       // Docker
+    iconColor.set('npm', 'text-red-600');           // npm
+    iconColor.set('yarn', 'text-cyan-600');         // Yarn
+    iconColor.set('webpack', 'text-sky-600');       // Webpack
 
     return (
-        <div className='dark:bg-gray-700 dark:border-gray-700 bg-white border-gray-100 border rounded-lg shadow-lg w-full px-6 py-6 flex gap-4 items-center'>
-            <div
-                className={className + ' dark:shadow-none rounded-full shadow-lg border min-w-[60px] w-[60px] h-[60px] flex flex-col items-center justify-center'}>
-                <div className='drop-shadow'>
-                    <props.Icon className='text-3xl dark:text-gray-100 text-white'/>
-                </div>
-            </div>
-
-            <div className='border-l border-gray-500 h-full ps-6 flex flex-col justify-center'>
-                <h6 className='font-bold'>{props.skill}</h6>
-                <p className='dark:text-gray-300'>{props.content}</p>
-            </div>
+        <div className='border-neutral-500 border px-4 py-2 rounded-full text-neutral-300 shadow flex items-center bg-white bg-opacity-10 backdrop-blur-2xl'>
+            <props.Icon className={`mr-2 ${iconColor.get(props.color)}`}/>
+            <p>{props.skill}</p>
         </div>
-
     )
 }
