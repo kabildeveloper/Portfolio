@@ -1,10 +1,13 @@
-import Img from 'next/image';
 import Button from "@/components/Button";
 import {onClickDownloadResume, onClickGithub, onClickGMail, onClickLinkedin, onClickWhatsApp} from "@/util/helper";
 import {SlSocialGithub, SlSocialGoogle, SlSocialLinkedin} from "react-icons/sl";
 import {FaWhatsapp} from "react-icons/fa6";
 import {useRef} from "react";
 import {motion, useInView} from "framer-motion";
+import styles from './Contact.module.scss';
+import BorderLightEffect from "@/components/BorderLightEffect";
+import Img from "next/image";
+import SocialIcon from "@/components/Social";
 
 const Contact = function () {
 
@@ -20,19 +23,36 @@ const Contact = function () {
             animate={{ opacity: contactInView ? 1 : 0, y: contactInView ? 0 : 100 }}
             transition={{ duration: 1 }}
         >
-            <div className='w-full'>
+            <div className={`w-full ${styles.contactParallaxSection}`}>
                 <div className='flex justify-center'>
                     <div className='container flex'>
-                        <div className='hidden w-0 md:block md:w-1/2 md:px-16'>
-                            <Img alt='Kabil' width={100} height={100} className='w-full dark:opacity-80' src='/kabil1.svg'/>
-                        </div>
-                        <div className='w-full md:w-1/2 px-16'>
+                        <div className='w-full px-16'>
                             <div className='h-full flex items-center'>
+                                <h6 className='font-bold text-8xl mb-12 w-1/2'>
+                                    Let&apos;s work together
+                                </h6>
+                                <div className='w-1/2'>
+                                    <div className='backdrop-blur-2xl shadow shadow-violet-950 rounded-xl grid grid-cols-2 gap-4 p-4 text-neutral-300'>
+                                        <div className='flex items-center h-fit gap-4'>
+                                            <SocialIcon bgRequired onClick={onClickLinkedin} src={'/linkedin.png'} alt={''}/>
+                                            <p>https://www.linkedin.com/in/kabil-r/</p>
+                                        </div>
+                                        <div className='flex items-center h-fit gap-4'>
+                                            <SocialIcon bgRequired onClick={onClickGithub} className='pb-1' src={'/github.png'} alt={''}/>
+                                            <p>https://github.com/kabilrajendhiran</p>
+                                        </div>
+                                        <div className='flex items-center h-fit gap-4'>
+                                            <SocialIcon onClick={onClickGMail} src={'/google.png'} alt={''}/>
+                                            <p>kabildeveloper@gmail.com</p>
+                                        </div>
+                                        <div className='flex items-center h-fit gap-4'>
+                                            <SocialIcon onClick={onClickWhatsApp} src={'/whatsApp.png'} alt={''}/>
+                                            <p>https://wa.me/917904178527</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div>
-                                    <h6 className='font-bold text-4xl mb-12 border-violet-500 border-b-2 w-fit dark:text-gray-300'>CONTACT
-                                        ME
-                                    </h6>
-                                    <ul className='dark:text-gray-300'>
+                                    {/*<ul className='dark:text-gray-300'>
                                         <li className='flex items-center gap-4 mb-5'>
                                             <div
                                                 className={`bg-pink-500 rounded shadow-lg shadow-pink-300 p-2 text-white 
@@ -78,9 +98,9 @@ const Contact = function () {
                                             </p>
                                         </li>
 
-                                    </ul>
-                                    <Button onClick={onClickDownloadResume} className='mt-8' size='lg'>Download
-                                        CV</Button>
+                                    </ul>*/}
+                                    {/*<Button onClick={onClickDownloadResume} className='mt-8' size='lg'>Download
+                                        CV</Button>*/}
                                 </div>
                             </div>
                         </div>

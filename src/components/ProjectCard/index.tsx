@@ -1,5 +1,6 @@
 import {FaArrowRight} from 'react-icons/fa';
 import {IconType} from "react-icons";
+import BorderLightEffect from "@/components/BorderLightEffect";
 
 export interface ProjectCardProps {
     title: string,
@@ -21,29 +22,30 @@ export default function ProjectCard(props: ProjectCardProps) {
     }
 
     return (
-        <div className='w-full rounded bg-[#f8faff] dark:bg-gray-700'>
+        <div className='w-full rounded-xl border-neutral-500 shadow-md border h-full relative'>
+            <BorderLightEffect/>
             <div className='px-6 py-12'>
                 <div className='flex flex-col items-center'>
-                    <div className='bg-pink-500 dark:bg-opacity-70 dark:shadow-none dark:text-gray-200 rounded shadow-lg shadow-pink-300 p-2 text-white text-4xl'>
+                    {/*<div className='bg-pink-500  dark:text-gray-200 rounded shadow shadow-pink-500 p-2 text-white text-4xl'>
                         <props.Icon/>
-                    </div>
+                    </div>*/}
 
                     <h5 className='font-bold mt-5 mb-4 text-xl dark:text-gray-100'>
                         {props.title}
                     </h5>
                 </div>
-                <div className='px-6'>
-                    <p className='text-left dark:text-gray-300'>
+                <div>
+                    <p className='dark:text-gray-300 text-justify'>
                         {props.content}
                     </p>
                 </div>
                 <div className='flex justify-center gap-4'>
-                    <div className='flex items-center justify-center my-4 font-medium gap-2'>
+                    {props.link && <div className='flex items-center justify-center my-4 font-medium gap-2'>
                         <p onClick={onClickLearnMore}
                            style={{borderImage: 'linear-gradient(to right, #4f46e5, #db2777)', borderImageSlice: 1}}
                            className='w-fit border-b-2 cursor-pointer'>Learn more</p>
                         <FaArrowRight className='cursor-pointer' onClick={onClickLearnMore}/>
-                    </div>
+                    </div>}
 
                     {props.viewLink && <div className='flex items-center justify-center my-4 font-medium gap-2'>
                         <p onClick={onClickView}

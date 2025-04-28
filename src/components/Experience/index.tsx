@@ -36,9 +36,14 @@ const Experience = function () {
                         return(
                             <div key={experience.companyName} className='grid grid-cols-2'>
                                 <div
-                                    className={`border-r-2 col-span-1 border-violet-500 min-h-[100px]`}
+                                    className={`border-r-2 col-span-1 border-violet-500 min-h-[100px] relative`}
                                 >
                                     {i%2===1 && <ExperienceCard {...experience} />}
+                                    <div className='absolute vertically-center-absolute right-[-11px] rounded-full border-2 border-violet-500 p-1 bg-black'>
+                                        <div className='w-[12px] h-[12px]  bg-violet-500 rounded-full'></div>
+                                        <p className={`absolute vertically-center-absolute ${i%2===0 ? 'right-[42px]' : 'left-[42px]'} text-4xl text-gradient font-dancing whitespace-nowrap`}>{experience.duration}</p>
+                                    </div>
+
                                 </div>
                                 <div className={`col-span-1 min-h-[100px]`}>
                                     {i%2===0 && <ExperienceCard {...experience} />}

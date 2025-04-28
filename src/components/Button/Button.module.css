@@ -1,9 +1,12 @@
+@reference '../../styles/globals.css';
+
 .button {
     background-image: linear-gradient(to right, #4f46e5, #db2777, #4f46e5, #db2777);
     background-position: 0 100%;
     background-size: 300% 100%;
     transition: background-position 500ms;
     /*box-shadow: 0 4px 15px 0 rgba(79, 70, 229, 0.63);*/
+    @apply rounded-md text-white font-medium;
 }
 
 .button:hover {

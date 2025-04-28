@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import {FaWhatsapp} from 'react-icons/fa6';
 import Img from 'next/image'
 import {onClickDownloadResume, onClickGithub, onClickGMail, onClickLinkedin, onClickWhatsApp} from "@/util/helper";
+import SocialIcon from "@/components/Social";
 
 export default function Home() {
     return (
@@ -31,13 +32,10 @@ export default function Home() {
                                Full Stack Developer
                             </p>
                             <div className='flex gap-4 text-gray-400 items-center text-2xl mt-8 w-full'>
-                                <SlSocialLinkedin onClick={onClickLinkedin}
-                                                  className='hover:text-indigo-500 cursor-pointer'/>
-                                <SlSocialGithub onClick={onClickGithub}
-                                                className='hover:text-indigo-500 cursor-pointer'/>
-                                <SlSocialGoogle onClick={onClickGMail}
-                                                className='hover:text-indigo-500 cursor-pointer'/>
-                                <FaWhatsapp onClick={onClickWhatsApp} className='hover:text-indigo-500 cursor-pointer'/>
+                                <SocialIcon bgRequired onClick={onClickLinkedin} src={'/linkedin.png'} alt={''}/>
+                                <SocialIcon bgRequired onClick={onClickGithub} className='pb-1' src={'/github.png'} alt={''}/>
+                                <SocialIcon onClick={onClickGMail} src={'/google.png'} alt={''}/>
+                                <SocialIcon onClick={onClickWhatsApp} src={'/whatsApp.png'} alt={''}/>
                             </div>
 
                             <Button onClick={onClickDownloadResume} className='mt-8' size='lg'>Download CV</Button>
