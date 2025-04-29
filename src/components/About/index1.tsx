@@ -32,7 +32,7 @@ const About = function (props: AboutProps) {
                                 <span className='text-gradient'>About </span>
                                 Me
                             </h6>
-                            <p className='text-left dark:text-gray-300 text-neutral-600 font-light' style={{letterSpacing: '1px'}}>Highly skilled and
+                            <p className='text-left dark:text-gray-300 text-neutral-600 font-light tracking-wider'>Highly skilled and
                                 results-driven React.js, Next.js, and Django developer with 2.5 years of
                                 experience in creating dynamic
                                 web applications and delivering top-notch solutions. Adept at leveraging

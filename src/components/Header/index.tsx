@@ -10,7 +10,6 @@ export default function Header() {
 
     const router = useRouter();
     const [isOpen, setOpen] = useState<boolean>(false);
-    const [toggleSwitch, setToggleSwitch] = useState<boolean>(false);
     const {theme, setTheme} = useTheme();
 
     const ref = useRef<HTMLDivElement>(null);
@@ -28,10 +27,6 @@ export default function Header() {
             document.removeEventListener('mousedown', handleClick);
         }
     }, [])
-
-    useEffect(()=>{
-        setToggleSwitch(theme==="dark");
-    }, [theme])
 
     const toggleNavbar = () => {
         setOpen(!isOpen);
@@ -58,14 +53,14 @@ export default function Header() {
     const highlighterLeft = activeIndex * 88;
 
     return (
-        <section className={`mx-auto p-2 h-fit z-50 fixed left-0 right-0 top-4 bg-transparent shadow border-neutral-400 border w-fit dark:text-gray-300 dark:bg-opacity-100 rounded-[64px] backdrop-blur-2xl`}>
+        <section className={`mx-auto p-2 h-fit z-50 fixed left-0 right-0 top-4 bg-transparent shadow-sm border-neutral-400 border w-fit dark:text-gray-300 rounded-[64px] backdrop-blur-2xl`}>
             <div className='flex justify-center items-center h-full w-full'>
                 <div className='container w-full'>
                     <div className='flex items-center justify-between w-full'>
                         {/*<p className='text-2xl font-normal'>KR</p>*/}
-                        <div className={`[&>*]:w-[80px] [&>*]:text-center [&>*]:rounded-[40px] gap-2 hidden md:flex ${styles.menu}`}>
+                        <div className={`*:w-[80px] *:text-center *:rounded-[40px] gap-2 hidden md:flex ${styles.menu}`}>
                             <div
-                                className={`${styles.activeHighlighter} backdrop-blur`}
+                                className={`${styles.activeHighlighter} backdrop-blur-sm`}
                                 style={{
                                     left: highlighterLeft,
                                 }}
@@ -90,7 +85,7 @@ export default function Header() {
                             </div>
 
                             <div id='hamburger' onClick={toggleNavbar}
-                                 className='border rounded w-[42px] h-[42px] flex items-center justify-center visible md:hidden'>
+                                 className='border rounded-sm w-[42px] h-[42px] flex items-center justify-center visible md:hidden'>
                                 <SlMenu className='pointer-events-none'/>
                             </div>
                         </div>
@@ -100,7 +95,7 @@ export default function Header() {
             </div>
             <div ref={ref}
                  className={`
-                 hover:[&>*]:dark:bg-gray-800 
+                 dark:*:hover:bg-gray-800 
                  bg-white 
                  dark:bg-gray-800 
                    flex flex-col 
@@ -111,15 +106,15 @@ export default function Header() {
                    duration-300
                    ${styles.menu}
                    `}>
-                <Link href='/' className={`${getActiveClass('/')} py-2 px-2 rounded hover:bg-indigo-100 text-gray-500`}>Home</Link>
+                <Link href='/' className={`${getActiveClass('/')} py-2 px-2 rounded-sm hover:bg-indigo-100 text-gray-500`}>Home</Link>
                 <Link href='/about'
-                      className={`${getActiveClass('/about')} py-2 px-2 rounded hover:bg-indigo-100`}>About</Link>
+                      className={`${getActiveClass('/about')} py-2 px-2 rounded-sm hover:bg-indigo-100`}>About</Link>
                 <Link href='/skills'
-                      className={`${getActiveClass('/skills')} py-2 px-2 rounded hover:bg-indigo-100`}>Skills</Link>
+                      className={`${getActiveClass('/skills')} py-2 px-2 rounded-sm hover:bg-indigo-100`}>Skills</Link>
                 <Link href='/projects'
-                      className={`${getActiveClass('/projects')} py-2 px-2 rounded hover:bg-indigo-100`}>Projects</Link>
+                      className={`${getActiveClass('/projects')} py-2 px-2 rounded-sm hover:bg-indigo-100`}>Projects</Link>
                 <Link href='/contact'
-                      className={`${getActiveClass('/contact')} py-2 px-2 rounded hover:bg-indigo-100`}>Contact</Link>
+                      className={`${getActiveClass('/contact')} py-2 px-2 rounded-sm hover:bg-indigo-100`}>Contact</Link>
             </div>
         </section>
     )

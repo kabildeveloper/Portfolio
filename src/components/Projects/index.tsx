@@ -42,7 +42,7 @@ export default function Projects() {
                         <div className='flex relative'>
                             <button onClick={()=>setProjectType(PROJECT_TYPE.PROFESSIONAL)} className='px-4 py-2 w-[120px] z-20'>Professional</button>
                             <button onClick={()=>setProjectType(PROJECT_TYPE.PERSONAL)} className='px-4 py-2 w-[120px] rounded-full z-20'>Personal</button>
-                            <div className={`transition-all duration-300 bg-gradient-to-r from-0% from-violet-500 to-100% to-pink-700 h-full rounded-full w-[120px] absolute top-0 z-10 ${LEFT}`}></div>
+                            <div className={`transition-all duration-300 bg-linear-to-r from-0% from-violet-500 to-100% to-pink-700 h-full rounded-full w-[120px] absolute top-0 z-10 ${LEFT}`}></div>
                         </div>
                     </div>
 

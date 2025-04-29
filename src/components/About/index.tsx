@@ -24,12 +24,13 @@ const About = function (props: AboutProps) {
         >
             <div className='w-full'>
                 <div className='flex justify-center'>
-                    <div className='container flex flex-col md:flex-row'>
-                        <div className='w-full px-5 md:w-1/2 md:px-16'>
+                    <div className='container my-20 flex flex-col md:flex-row-reverse'>
+                        <div className='w-full px-5 md:w-1/2 '>
                             <div className='h-full flex items-center'>
-                                <div>
-                                    <h6 className='font-bold text-4xl mb-8 border-violet-500 border-b-2 w-fit dark:text-gray-300'>ABOUT ME</h6>
-                                    <p className='text-left dark:text-gray-300' style={{letterSpacing: '1px'}}>Highly skilled and
+                                <div className='border p-6 border-neutral-400 shadow-md backdrop-blur-2xl rounded-xl relative'>
+                                    <h6 className='font-dancing font-bold text-4xl mb-6 mt-2 text-center  text-neutral-300'>
+                                        <span className='text-gradient'>About</span> Me</h6>
+                                    <p className='text-left tracking-wider text-lg text-neutral-300'>Highly skilled and
                                         results-driven React.js, Next.js, and Django developer with 2.5 years of
                                         experience in creating dynamic
                                         web applications and delivering top-notch solutions. Adept at leveraging
@@ -39,15 +40,13 @@ const About = function (props: AboutProps) {
                                         Seeking opportunities to contribute my expertise to innovative projects and help
                                         drive web development excellence.
                                     </p>
-                                    <Button onClick={onClickDownloadResume} className='mt-8' size='lg'>Download
-                                        CV</Button>
                                 </div>
                             </div>
                         </div>
 
                         <div
-                            className={`${props.fromHome ? 'hidden' : ''} mx-10 mb-20 md:mb-0 md:block md:w-1/2 md:px-16 dark:opacity-80`}>
-                            <Img alt='Kabil' width={100} height={100} className='w-full' src='/kabil1.svg'/>
+                            className={`${props.fromHome ? 'hidden' : ''} mx-10 mb-20 md:mb-0 md:block md:w-1/2 dark:opacity-80`}>
+                            <Img alt='Kabil' width={100} height={100} className='w-[80%]' src='/kabil1.svg'/>
                         </div>
                     </div>
                 </div>

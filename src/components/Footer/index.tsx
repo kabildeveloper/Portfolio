@@ -3,6 +3,7 @@ import {FaWhatsapp} from "react-icons/fa6";
 import Button from "@/components/Button";
 import {onClickDownloadResume, onClickGithub, onClickGMail, onClickLinkedin, onClickWhatsApp} from "@/util/helper";
 import Link from "next/link";
+import SocialIcon from "@/components/Social";
 
 export default function Footer() {
 
@@ -12,31 +13,32 @@ export default function Footer() {
                 <div className='container px-5 md:px-28 mt-16'>
                     <div className='flex gap-5 flex-col md:gap-10 md:flex-row items-center md:items-start'>
                         <div className='h-fit text-center md:text-left w-full dark:text-gray-300'>
-                            <h5 className='text-3xl text-pink-600 font-bold'>Portfolio</h5>
-                            <p className='mt-2'>Kabil Rajendhiran</p>
+                            <h5 className='text-3xl text-pink-600 font-bold'>Kabil Rajendhiran</h5>
+                            <p className='mt-2 text-pink-500'>Social Links</p>
                             <div
                                 className='flex gap-1 text-white justify-center md:justify-start items-center text-2xl mt-2'>
+
                                 <div
-                                    className='flex w-[36px] h-[36px] bg-transparent items-center justify-center rounded hover:bg-pink-500'>
+                                    className='flex w-[36px] h-[36px] bg-transparent items-center justify-center rounded-sm hover:bg-pink-500'>
                                     <SlSocialLinkedin onClick={onClickLinkedin} className='cursor-pointer'/>
                                 </div>
                                 <div
-                                    className='flex w-[36px] h-[36px] bg-transparent items-center justify-center rounded hover:bg-pink-500'>
+                                    className='flex w-[36px] h-[36px] bg-transparent items-center justify-center rounded-sm hover:bg-pink-500'>
                                     <SlSocialGithub onClick={onClickGithub} className='cursor-pointer'/>
                                 </div>
                                 <div
-                                    className='flex w-[36px] h-[36px] bg-transparent items-center justify-center rounded hover:bg-pink-500'>
+                                    className='flex w-[36px] h-[36px] bg-transparent items-center justify-center rounded-sm hover:bg-pink-500'>
                                     <SlSocialGoogle onClick={onClickGMail} className='cursor-pointer'/>
                                 </div>
                                 <div
-                                    className='flex w-[36px] h-[36px] bg-transparent items-center justify-center rounded hover:bg-pink-500'>
+                                    className='flex w-[36px] h-[36px] bg-transparent items-center justify-center rounded-sm hover:bg-pink-500'>
                                     <FaWhatsapp onClick={onClickWhatsApp} className='cursor-pointer'/>
                                 </div>
                             </div>
                         </div>
                         <div className='w-full text-center md:text-left dark:text-gray-300'>
                             <h6 className='text-lg font-medium text-pink-500 mb-2'>Quick Links</h6>
-                            <ul className='hover:[&>*>a]:text-pink-500'>
+                            <ul className='[&>*>a]:hover:text-pink-500'>
                                 <li><Link href='/'>Home</Link></li>
                                 <li><Link href='/about'>About</Link></li>
                                 <li><Link href='/skills'>Skills</Link></li>
@@ -46,7 +48,7 @@ export default function Footer() {
                         </div>
                         <div className='w-full text-center md:text-left dark:text-gray-300'>
                             <h6 className='text-lg font-medium text-pink-500 mb-2'>Credits</h6>
-                            <ul className='hover:[&>*>a]:text-pink-500'>
+                            <ul className='[&>*>a]:hover:text-pink-500'>
                                 <li><Link target='_blank' href='https://react.dev/'>React</Link></li>
                                 <li><Link target='_blank' href='https://tailwindcss.com/'>Tailwind</Link></li>
                                 <li><Link target='_blank' href='https://nextjs.org/'>NextJs</Link></li>

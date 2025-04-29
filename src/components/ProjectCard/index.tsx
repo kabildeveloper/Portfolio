@@ -26,7 +26,7 @@ export default function ProjectCard(props: ProjectCardProps) {
             <BorderLightEffect/>
             <div className='px-6 py-12'>
                 <div className='flex flex-col items-center'>
-                    {/*<div className='bg-pink-500  dark:text-gray-200 rounded shadow shadow-pink-500 p-2 text-white text-4xl'>
+                    {/*<div className='bg-pink-500  dark:text-gray-200 rounded-sm shadow-sm shadow-pink-500 p-2 text-white text-4xl'>
                         <props.Icon/>
                     </div>*/}
 

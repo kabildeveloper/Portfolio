@@ -48,7 +48,7 @@ export default function SkillCard(props: SkillCardProps) {
     iconColor.set('webpack', 'text-sky-600');       // Webpack
 
     return (
-        <div className='border-neutral-500 border px-4 py-2 rounded-full text-neutral-300 shadow flex items-center bg-white bg-opacity-10 backdrop-blur-2xl'>
+        <div className='border-neutral-500 border px-4 py-2 rounded-full text-neutral-300 shadow-sm flex items-center bg-white/10 backdrop-blur-2xl'>
             <props.Icon className={`mr-2 ${iconColor.get(props.color)}`}/>
             <p>{props.skill}</p>
         </div>

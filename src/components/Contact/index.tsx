@@ -28,11 +28,11 @@ const Contact = function () {
                     <div className='container flex'>
                         <div className='w-full px-16'>
                             <div className='h-full flex items-center'>
-                                <h6 className='font-bold text-8xl mb-12 w-1/2'>
+                                <h6 className='font-bold text-8xl my-12 text-shadow-md w-1/2'>
                                     Let&apos;s work together
                                 </h6>
                                 <div className='w-1/2'>
-                                    <div className='backdrop-blur-2xl shadow shadow-violet-950 rounded-xl grid grid-cols-2 gap-4 p-4 text-neutral-300'>
+                                    <div className='backdrop-blur-2xl shadow-sm shadow-violet-950 rounded-xl grid grid-cols-2 gap-4 p-4 text-neutral-300'>
                                         <div className='flex items-center h-fit gap-4'>
                                             <SocialIcon bgRequired onClick={onClickLinkedin} src={'/linkedin.png'} alt={''}/>
                                             <p>https://www.linkedin.com/in/kabil-r/</p>

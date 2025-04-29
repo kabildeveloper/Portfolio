@@ -1,6 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-open-sans: var(--font-open-sans);
+}
+
+@layer utilities {
+    .font-dancing {
+        font-family: var(--font-dancing-script);
+        @apply text-5xl;
+    }
+}
 
 :root {
 }
@@ -17,7 +28,7 @@ html, body {
 }
 
 .text-gradient {
-    @apply text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text;
+    @apply text-transparent bg-linear-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text;
 }
 
 .vertically-center-absolute {
