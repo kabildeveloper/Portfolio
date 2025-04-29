@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <section className=''>
             <div className='w-full flex flex-col items-center justify-center mt-20 md:mt-40'>
-                <div className='container gap-10 md:gap-0 flex flex-col-reverse md:flex-row w-full'>
+                <div className='container gap-10 flex flex-col-reverse md:flex-row w-full'>
                     <div className="md:w-1/2 w-full px-8 md:px-0">
                         <div className='flex items-center justify-center'>
                             <ReactParallaxTilt trackOnWindow tiltReverse>

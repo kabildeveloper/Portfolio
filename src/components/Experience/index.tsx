@@ -26,7 +26,7 @@ const Experience = function () {
             animate={{opacity: experienceInView ? 1 : 0, y: experienceInView ? 0 : 200}}
             transition={{duration: 1}}
         >
-            <section className='mx-auto px-5 md:px-28 container'>
+            <section className='mx-auto px-5 container'>
                 <h3 className='dark:text-gray-300 text-4xl font-bold w-full text-center mb-12 hidden md:block font-dancing'>
                     My <span className='text-gradient'>Experience</span>
                 </h3>
