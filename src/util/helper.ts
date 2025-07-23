@@ -1,5 +1,5 @@
 export const onClickDownloadResume = () => {
-    window.open('https://1drv.ms/b/s!ArmCam8DlFVugi3gNiXniR6DMM_M?e=KSmoSb', '_blank');
+    window.open('https://github.com/kabildeveloper/Portfolio/blob/fb73f2c19ce2e3320c4d45586e059bd81af13b20/Kabil_Rajendhiran.pdf', '_blank');
 }
 
 export const onClickLinkedin = () => {
